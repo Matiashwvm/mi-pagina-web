@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopa de Letras  :) </title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Bowlby+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="safari-element">🦁</div>
+    <div class="safari-element">🐅</div>
+    <div class="safari-element">🦒</div>
+    <div class="safari-element">🐘</div>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+    <div class="success-modal" id="successModal">
+        <h2></h2>
+        <p>¡Felicidades! Has encontrando todas las palabras.</p>
+    </div>
+    
+    <div class="container">
+        <div class="add-word-container">
+    <input type="text" id="newWordInput" placeholder="Agrega una palabra...">
+    <button id="addWordButton">🔤 Agregar</button>
+    </div>
+        <h1>🔍 SOPA de LETRAS 🔍</h1>
+        <p class="subtitle">Encuentra todos las palabras, que desees</p>
+        
+        <div class="game-area">
+            <div class="grid-container">
+                <div class="grid" id="grid"></div>
+            </div>
+            
+            <div>
+                <div class="words-list">
+                    <h3>Palabras</h3>
+                    <div id="wordsList"></div>
+                </div>
+                <div class="score" id="score">Encontradas: 0/6</div>
+                <button class="reset-btn" onclick="initGame()">🔄 Nuevo Safari</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
